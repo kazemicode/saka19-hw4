@@ -17,24 +17,24 @@ function generateQuote(){
 
 /* Creates the root route, which sends response when root folder of website is requested */
 app.get("/", function(request, response){
-  response.render("index.ejs",
+  response.render("index.html",
                  {quote: generateQuote()}); // renders an HTML page. NOTE: In Node, all html files must be placed in /views
                   
 });
 
 /* Content pages to render */
-app.get("/about.html", function(request, response){
-  response.render("about.ejs",
+app.get("/about", function(request, response){
+  response.render("about.html",
                  {quote: generateQuote()}); // renders an HTML page. NOTE: In Node, all html files must be placed in /views
                   
 });
-app.get("/practical.html", function(request, response){
-  response.render("practical.ejs",
+app.get("/practical", function(request, response){
+  response.render("practical.html",
                  {quote: generateQuote()}); // renders an HTML page. NOTE: In Node, all html files must be placed in /views
                  
 });
-app.get("/learn.html", function(request, response){
- response.render("learn.ejs",
+app.get("/learn", function(request, response){
+ response.render("learn.html",
                  {quote: generateQuote()}); // renders an HTML page. NOTE: In Node, all html files must be placed in /views
                  
 });
@@ -43,11 +43,11 @@ app.get("/learn.html", function(request, response){
 
  /* Server listener with callback function that displays a message to signal Express is listening for requests */
 //configuration for codeanywhere
-// app.listen("8081", "0.0.0.0", function(){
+// app.listen("8081"  , "0.0.0.0", function(){
 //   console.log("Express Server is Running. . . ")
 // });
 
 // // configuration for Heroku
-  app.listen(process.env.PORT, process.env.IP, function(){
+  app.listen(process.env.PORT || "8081", process.env.IP || "0.0.0.0" , function(){
   console.log("Express Server is Running. . . ")
 });
