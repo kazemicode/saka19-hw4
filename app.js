@@ -43,11 +43,11 @@ app.get("/learn.html", function(request, response){
 
 /* Server listener with callback function that displays a message to signal Express is listening for requests */
 //configuration for codeanywhere
-app.listen("8081", "0.0.0.0", function(){
-  console.log("Express Server is Running. . . ")
-});
-
-// // configuration for Heroku
-// app.listen(process.env.PORT, process.env.IP, function(){
+// app.listen("8081", "0.0.0.0", function(){
 //   console.log("Express Server is Running. . . ")
 // });
+
+// // configuration for Heroku
+app.listen(process.env.PORT, process.env.IP, function(){
+  console.log("Express Server is Running. . . ")
+});
