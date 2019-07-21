@@ -77,11 +77,11 @@ hr.dash-style {
 }
 
 h2 {
-  color: #006666;
+  color: #00B3B3;
 }
 
 / * Special header with arrow symbol preceding */
-.section-header:before {
+.section-header::before {
   content: "\2B9E";
 }
 
