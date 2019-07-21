@@ -12,13 +12,18 @@
 <script>
   var name = location.pathname;
   name = name.split("/").pop();
+  
   //console.log(name);
   if(name){
-     document.getElementById(name).style.color = "#00CACA";
+    document.getElementById(name).id = "current";
+     
+    
   }
   else{
-     document.getElementById("index").style.color = "#00CACA";
+     name = document.getElementById("index").id = "current";
   }
+  
+  
  
   
   

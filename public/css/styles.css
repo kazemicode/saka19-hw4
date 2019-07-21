@@ -23,7 +23,7 @@ nav a {
   color: #afaf00;
 }
 
-a:hover {
+a:hover, #current:hover {
   background-color: #afaf00;
   color: #111111;
   font-weight: bold;
@@ -58,9 +58,11 @@ footer {
 
 /* Special formatting for current page link visited */
 #current {
-  color: #3f3f00;
+  color: #00CACA;
   font-weight: bold;
 }
+
+
 
 /* Highlighted text class */
 .highlight {
