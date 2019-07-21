@@ -1,0 +1,23 @@
+{
+  "name": "saka19-hw4",
+  "version": "1.0.0",
+  "description": "refactor of hw1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazemicode/saka19-hw4.git"
+  },
+  "author": "Sara Kazemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazemicode/saka19-hw4/issues"
+  },
+  "homepage": "https://github.com/kazemicode/saka19-hw4#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}

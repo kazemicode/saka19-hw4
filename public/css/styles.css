@@ -1,0 +1,116 @@
+/* Body rules */
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 1.3em;
+}
+
+body a {
+  text-decoration: none;
+  color: #880088;
+}
+
+/* Navigation rules */
+nav a {
+  padding: 15px;
+  padding-bottom: 5px;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #afaf00;
+}
+
+a:hover {
+  background-color: #afaf00;
+  color: #111111;
+  font-weight: bold;
+}
+
+header, nav, main, footer {
+  text-align: center;
+}
+
+/* Main rules */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+/* Content rules */
+div.content {
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Footer rules */
+footer {
+  display: block;
+  font-size: 0.8em;
+  color: #aaaaaa;
+  font-weight: bold;
+}
+
+/* Special formatting for current page link visited */
+#current {
+  color: #3f3f00;
+  font-weight: bold;
+}
+
+/* Highlighted text class */
+.highlight {
+  font-weight: bold;
+  color: #111111;
+  background-color: #afaf00;
+}
+
+/* Dashed horizontal rule class */
+hr.dash-style {
+  border: 2px dashed #afaf00;
+  margin-bottom: 17px;
+  
+}
+
+h2 {
+  color: #006666;
+}
+
+/ * Special header with arrow symbol preceding */
+.section-header:before {
+  content: "\2B9E";
+}
+
+/* Typewriter effect modified from https://css-tricks.com/snippets/css/typewriter-effect/ */
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is hidden until animation */
+  border-right: .15em solid #afaf00; /* typewriter cursor */
+  white-space: nowrap;  /* keep content on single line */
+  margin: 0 auto; /* necessary for scrolling effect */
+  color: #afaf00;
+  letter-spacing: .15em;  
+  animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {  /* typewriter effect for text */
+  from { width: 0; }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #afaf00; }
+}
+
+/* Keeps typewriter text in header from going across 100% of the screen's width */
+.flex-container {
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+}
+
