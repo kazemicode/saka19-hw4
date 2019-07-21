@@ -7,5 +7,21 @@
   <img src="img/csumb-logo-white.png" alt="CSUMB logo"><br>
   <%= quote %>
 </footer>
+
+ <!-- Custom JS -->
+<script>
+  var name = location.pathname;
+  name = name.split("/").pop();
+  //console.log(name);
+  if(name){
+     document.getElementById(name).style.color = "#3f3f00";
+  }
+  else{
+     document.getElementById("index").style.color = "#3f3f00";
+  }
+ 
+  
+  
+</script>
 </body>
 </html>
